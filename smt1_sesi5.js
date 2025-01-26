@@ -22,10 +22,10 @@ let pegawaiUser = document.getElementById('pegawaiUser');
 let formInput = document.querySelector(".form-input");
 let formButton = document.querySelector(".form-button");
 
-// pegawaiUser.style.display = "none"
-// leaderUser.style.display = "none"
-// spvUser.style.display = "none"
-// adminUser.style.display = "none"
+pegawaiUser.style.display = "none"
+leaderUser.style.display = "none"
+spvUser.style.display = "none"
+adminUser.style.display = "none"
 
 function onRegister() {
     localStorage.setItem("username", regisUsername.value);
@@ -75,30 +75,32 @@ function onRegister() {
 function onLogin() {
     if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "admin") {
         alert("login sebagai admin");
+        adminUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "supervisor") {
         alert("login sebagai supervisor");
+        spvUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "leader") {
         alert("login sebagai leader");
+        leaderUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "pegawai") {
         alert("login sebagai pegawai");
+        pegawaiUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else {
         alert("Tidak ada data pegawai!");
+        location.reload();
     }
-
-    // if(localStorage.getItem("username")) {
-    //     pegawaiUser.style.display = "none"
-    //     leaderUser.style.display = "none"
-    //     spvUser.style.display = "none"
-    //     adminUser.style.display = "none"
-    //     formInput.style.display = "none"
-    //     formButton.style.display = "none"
-    // }
-
-    location.reload();
 }
 
 function onLogout() {
