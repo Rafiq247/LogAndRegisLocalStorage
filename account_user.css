@@ -1,0 +1,110 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+#root {
+    background-color: rgb(237, 237, 237);
+    height: 100vh;
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.form-input {
+    width: 30vh;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-username {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.container-password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#loginUsername {
+    padding: 8px;
+}
+
+#loginPassword {
+    padding: 8px;
+}
+
+#inputLogin {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#inputRegister {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#inputLogin:hover {
+    background-color: aquamarine;
+}
+
+#inputRegister {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#inputRegister:hover {
+    background-color: aquamarine;
+}
+
+.form-button {
+    height: 90px;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#inputFirstName {
+    padding: 8px;
+}
+
+#inputLastName {
+    padding: 8px;
+}
+
+#regisUsername {
+    padding: 8px;
+}
+
+#regisPassword {
+    padding: 8px;
+}
+
+.note-text {
+    width: 30vh;
+}
