@@ -76,14 +76,20 @@ function onLogin() {
     if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "admin") {
         alert("login sebagai admin");
         adminUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "supervisor") {
         alert("login sebagai supervisor");
         spvUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "leader") {
         alert("login sebagai leader");
         leaderUser.style.display = "block";
+        formInput.style.display = "none";
+        formButton.style.display = "none";
         localStorage.clear();
     } else if (localStorage.getItem("username") && localStorage.getItem("password") == loginPassword.value && localStorage.getItem("role") == "pegawai") {
         alert("login sebagai pegawai");
