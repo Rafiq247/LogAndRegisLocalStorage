@@ -1,6 +1,7 @@
 ==== WELCOME TO FORM LOGIN AND REGISTER WITH LOCALSTORAGE BROWSER ====
 
 ================== ACCOUNT REGISTER FOR SUPERUSER 👍 ==================
+
 +++ ADMIN +++
 - username: andri
 - password: admin123
