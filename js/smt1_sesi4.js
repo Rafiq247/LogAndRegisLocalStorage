@@ -1,3 +1,4 @@
+"use strict";
 /*
 1. Tugas buat 10 lampu dengan 4 kategori sebagai berikut:
     - Ruang keluarga (3 lampu)

@@ -1,12 +1,20 @@
 *,
-html {
+html,
+body {
     padding: 0;
     margin: 0;
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(255, 255, 255); */
+    /* color: rgb(25, 25, 25); */
+}
+
+.dark {
+    background-color: rgb(21, 21, 21);
+    color: white;
 }
 
 #root {
-    background-color: rgb(237, 237, 237);
     height: 100vh;
 }
 
@@ -16,7 +24,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: bisque;
 }
 
 .form-input {
@@ -89,6 +96,10 @@ html {
     margin-bottom: 32px;
 }
 
+.form-button a {
+    text-decoration: none;
+}
+
 #inputFirstName {
     padding: 8px;
 }
@@ -107,4 +118,27 @@ html {
 
 .note-text {
     width: 30vh;
+}
+
+footer {
+    /* padding: 15px 15px 15px 0; */
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 17px 20px;
+    margin-inline-end: 20px;
+    /* background-color: darkcyan; */
+}
+
+footer a:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+#remainingLeftDarkMode {
+    position: absolute;
+    top: 20%;
 }

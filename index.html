@@ -32,7 +32,7 @@
                 </li>
                 <li class="nav-item d-md-flex align-items-md-center">
                   <a class="navbar-brand" href="#">
-                    <img src="/assets/fotoku2.jpeg" alt="Logo" width="45px" height="47px"
+                    <img src="/assets/fotoku.jpg" alt="Logo" width="45px" height="47px"
                       class="d-inline-block align-text-center rounded-circle me-1">
                     Ahmad Andri Rafiq
                   </a>
@@ -45,6 +45,7 @@
 
     <!-- MAIN CONTENT START -->
     <div class="main-content">
+      <p id="remainingLeftDarkMode"></p>
       <div class="form-input">
         <div class="container-username">
           Username: <input type="text" placeholder="Username" id="loginUsername" />
@@ -59,8 +60,13 @@
         <a href="/pages/register.html">Don't have account? Register here</a>
       </div>
     </div>
+    <!-- MAIN CONTENT END -->
+
+    <footer class="bg-body-tertiary text-white" data-bs-theme="dark">
+      <a onclick="onRestart()" id="restartMode">Restart</a>
+      <a onclick="onDark()" id="darkMode">Dark Mode</a>
+    </footer>
   </div>
-  <!-- MAIN CONTENT END -->
   <!-- TUGAS SEMESTER 1 SESI KE-5 END -->
 
   <!-- TUGAS SEMESTER 1 SESI KE-4 START -->
