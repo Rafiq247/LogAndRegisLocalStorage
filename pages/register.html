@@ -14,6 +14,7 @@
 <body>
     <div id="root">
         <div class="main-content">
+            <p id="remainingLeftDarkMode"></p>
             <div class="form-input">
                 <div class="container-username">
                     First Name: <input type="text" placeholder="First Name" id="inputFirstName" />
@@ -38,12 +39,11 @@
                 <p>- Read the readme.txt file to register a superuser account in my Github 'Rafiq247'</p>
             </div>
         </div>
-    </div>
-
-    <footer class="bg-body-tertiary text-white" data-bs-theme="dark">
-        <a onclick="onRestart()" id="restartMode">Restart</a>
-        <a onclick="onDark()">Dark Mode</a>
-    </footer>
+        
+        <footer class="bg-body-tertiary text-white" data-bs-theme="dark">
+            <a onclick="onRestart()" id="restartMode">Restart</a>
+            <a onclick="onDark()" id="darkMode">Dark Mode</a>
+        </footer>
     </div>
 
 

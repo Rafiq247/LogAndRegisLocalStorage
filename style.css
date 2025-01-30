@@ -121,7 +121,7 @@ body {
 }
 
 footer {
-    /* padding: 15px 15px 15px 0; */
+    display: flex;
 }
 
 footer a {
@@ -140,5 +140,5 @@ footer a:hover {
 
 #remainingLeftDarkMode {
     position: absolute;
-    top: 20%;
+    top: 10%;
 }

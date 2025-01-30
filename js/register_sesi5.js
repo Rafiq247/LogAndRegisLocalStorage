@@ -7,6 +7,12 @@ let regisUsername = document.getElementById('regisUsername');
 let regisPassword = document.getElementById('regisPassword');
 let inputFirstName = document.getElementById('inputFirstName');
 let inputLastName = document.getElementById('inputLastName');
+let restartMode = document.getElementById('restartMode');
+let remainingLeftDarkMode = document.getElementById('remainingLeftDarkMode');
+
+let countLimit = 0;
+let darkModeLimit = 5;
+let remainingLeft;
 
 restartMode.style.display = "none";
 
@@ -58,29 +64,20 @@ function onRegister() {
 }
 
 //Semester 1 - Sesi 6
-/*
-1. buatkan sebuah kondisi yang dimana jika angka sudah mencapai 5x maka limit nya sudah habis
-*/
-
-let countLimit = 0;
-let limitCondition = 5;
-// let remainingCondition;
-// let test;
-
 function onDark() {
-    // if (remainingCondition == 1){
-    //     console.log("limit anda sudah habis");
-    //     return
-    // }
     countLimit += 1;
-    
-    if (countLimit >= 5) {
-        console.log("your limit expired");
-        return
+    remainingLeft = darkModeLimit - countLimit;
+    remainingLeftDarkMode.textContent = `Remaining left your dark mode is ${remainingLeft}x `;
+
+    if (countLimit >= darkModeLimit || remainingLeft == 0) {
+        remainingLeftDarkMode.textContent = `Your dark mode has run out`;
+        restartMode.style.display = "inline-block";
+        return;
     }
-    
-    // test = countLimit - 5;
-    // remainingCondition = limitCondition - countLimit;
-    console.log(countLimit);
+
     body.classList.toggle('dark');
+}
+
+function onRestart() {
+    location.reload();
 }
